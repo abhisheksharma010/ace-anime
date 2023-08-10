@@ -30,7 +30,8 @@ function ImgSlider() {
 export default ImgSlider;
 
 const Carousle =styled(Slider)`
-margin-top:20px;
+// margin-top:20px;
+// height: 40vh;
 
 ul li button{
   &:before{
@@ -38,18 +39,22 @@ ul li button{
     color: rgb(180, 180, 180);
   }
 }
+slick-active{
+  width:100%;
+}
 li.slick-active bu tton::before{
   color: white;
 }
 .slick-list{
-  overflow:visible;
+  overflow:hidden;
 }
 
 button{
-  z-index:1;
+  // z-index:1;
 }
 `
 const Wrap = styled.div`
+height:40vh;
 cursor:pointer;
       img {
         height: 100%;

@@ -3,12 +3,16 @@ import styled from 'styled-components';
 // import ImageSlider from './ImageSlider';
 import ImgSlider from './ImgSlider';
 import Viewers from './Viewers';
+import Trending from './Trending';
+import AnimeMoive from './animeMovie';
 
 function Home() {
   return (
     <Container>
       <ImgSlider />
-      {/* <Viewers /> */}
+      <Viewers />
+      <Trending/>
+      <AnimeMoive/>
     </Container>
   )
 }
@@ -31,3 +35,6 @@ export default Home
   position: absolute;
   z-index: -1;
 `
+// const ImgSlider = styled.div`
+// height:40vh
+// `
